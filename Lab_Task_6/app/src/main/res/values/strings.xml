@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NewsReaderApp</string>
+    <string name="toolbar_title">The Daily Reader</string>
+    <string name="bookmark_added">Article Bookmarked</string>
+    <string name="bookmark_removed">Bookmark Removed</string>
+    
+<string name="section_intro">
+        Universities and students are entering a new phase of learning where long-form reading is often paired with interactive help. Modern AI assistants can summarize difficult paragraphs, explain unfamiliar terms, and generate study questions from a single article. For many learners, this is the first time that a personal tutor-like tool is available on demand, at any hour, and in a format that feels conversational. However, the biggest value is not simply speed. When used correctly, an assistant can strengthen understanding by encouraging students to restate ideas, compare viewpoints, and connect new information to earlier topics. This article explores how AI tools are influencing reading habits, note-taking, and academic honesty. It also highlights why clear rules and good personal discipline matter. The goal is to help students use technology to become more independent, not more dependent, while keeping learning authentic.
+    </string>
+
+<string name="section_keypoints">
+        The most visible change is the way students handle complex material. Instead of skipping difficult sections, many learners ask for simpler explanations and then return to the original text with better confidence. Another key point is personalized practice: assistants can generate short quizzes, flashcards, and revision prompts tailored to the specific article. Students also report improved organization because they can convert notes into structured outlines and study plans. At the same time, risks exist. Overreliance can reduce critical thinking if the assistant is treated as the final authority. There are also concerns about inaccurate outputs, especially when the assistant guesses instead of verifying. Finally, academic policies are evolving. Some courses allow AI for brainstorming and editing, while banning it for graded solutions. Students should understand their institution’s rules, keep citations clear, and treat AI as a helper rather than a replacement for reading and reasoning.
+    </string>
+
+<string name="section_analysis">
+        The real impact of AI on reading depends on how it is integrated into a student’s workflow. If the tool is used to avoid reading, performance may drop because deep comprehension requires time and effort. But if the tool is used after an initial read, it can act as a feedback system. For example, a student can ask the assistant to challenge their understanding with “why” and “how” questions, or to identify possible counterarguments to the author’s claims. This style of use strengthens metacognition: the learner becomes aware of what they know and what they do not. Another area is accessibility. Students with language barriers or learning differences can receive explanations in simpler language or with examples that match their background knowledge. Still, reliability and privacy must be considered. Users should avoid sharing sensitive data and should cross-check facts with trusted sources, especially for academic work.
+    </string>
+
+<string name="section_conclusion">
+        AI assistants are not automatically good or bad for education. They are tools, and tools amplify habits. For students who already practice careful reading, AI can increase clarity, speed up revision, and make learning more engaging. For students who want shortcuts, the same technology can reduce effort and weaken skill development. The healthiest approach is to use AI to support the process: read the article fully, take your own notes, then ask targeted questions to confirm understanding, generate practice problems, and explore different perspectives. When writing assignments, follow course rules and be transparent about how you used assistance. Ultimately, the goal of university learning is to build thinking skills that last beyond one course. Used responsibly, AI can help students become more confident readers and more reflective learners, while still protecting academic integrity and personal accountability.
+    </string>
+</resources>
