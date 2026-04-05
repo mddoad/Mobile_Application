@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Student Info Section -->
+        <TextView
+            android:id="@+id/tvStudentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Grade Report"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name: John Doe"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student ID: 2026-001"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvSemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester: Spring 2026"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department: Computer Science"
+            android:textSize="14sp"
+            android:paddingBottom="12dp" />
+
+        <!-- Grade Table -->
+        <TableLayout
+            android:id="@+id/tableGrades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*"
+            android:background="#DDDDDD"
+            android:padding="1dp">
+
+            <!-- Header Row -->
+            <TableRow
+                android:id="@+id/rowHeader"
+                android:background="#263238"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Obtained"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="6dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Grade"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:padding="6dp" />
+            </TableRow>
+
+            <!-- 6 Subject Rows (initial sample rows) -->
+            <TableRow
+                android:id="@+id/row1"
+                android:background="#FFFFFF"
+                android:padding="6dp" />
+
+            <TableRow
+                android:id="@+id/row2"
+                android:background="#F5F5F5"
+                android:padding="6dp" />
+
+            <TableRow
+                android:id="@+id/row3"
+                android:background="#FFFFFF"
+                android:padding="6dp" />
+
+            <TableRow
+                android:id="@+id/row4"
+                android:background="#F5F5F5"
+                android:padding="6dp" />
+
+            <TableRow
+                android:id="@+id/row5"
+                android:background="#FFFFFF"
+                android:padding="6dp" />
+
+            <TableRow
+                android:id="@+id/row6"
+                android:background="#F5F5F5"
+                android:padding="6dp" />
+
+            <!-- Summary row (span full width) -->
+            <TableRow
+                android:id="@+id/rowSummary"
+                android:background="#ECEFF1"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tvSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:text="Total Subjects: 0   Passed: 0   Failed: 0"
+                    android:textStyle="bold"
+                    android:padding="8dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- GPA Display -->
+        <TextView
+            android:id="@+id/tvGpaLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPA"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="14dp" />
+
+        <TextView
+            android:id="@+id/tvGpaValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:textColor="#1B5E20"
+            android:paddingBottom="12dp" />
+
+        <!-- Add Subject Section -->
+        <TextView
+            android:id="@+id/tvAddTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Subject"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+
+        <EditText
+            android:id="@+id/etSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Subject Name (e.g., OOP)"
+            android:inputType="textCapWords" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <EditText
+                android:id="@+id/etObtained"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:hint="Obtained"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:minHeight="48dp"
+                android:hint="Total"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_marginTop="10dp" />
+
+        <!-- Print / Share Button -->
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Print / Share"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>
